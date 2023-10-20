@@ -1,10 +1,15 @@
 package task2;
 
-public class Sphere extends VolumeFigure {
+public class Sphere extends Figures {
     private final double radius;
 
     public Sphere(double radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public double area() {
+        return 4 * Math.PI * radius * radius;
     }
 
     @Override

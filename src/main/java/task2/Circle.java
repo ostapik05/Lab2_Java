@@ -1,6 +1,6 @@
 package task2;
 
-public class Circle extends AreaFigures {
+public class Circle extends Figures {
 
     private final double radius;
 
@@ -11,5 +11,10 @@ public class Circle extends AreaFigures {
     @Override
     public double area() {
         return Math.PI * Math.pow(radius, 2);
+    }
+
+    @Override
+    public double volume(){
+        throw new UnsupportedOperationException("Circle has no volume");
     }
 }

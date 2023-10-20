@@ -3,7 +3,7 @@ package task1;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-class Stack<T> implements Iterable<T> {
+public class Stack<T> implements Iterable<T> {
     private Node<T> top = null;
     private int size = 0;
 
@@ -47,6 +47,7 @@ class Stack<T> implements Iterable<T> {
         }
         return top.data;
     }
+
 
     @Override
     public Iterator<T> iterator() {

@@ -87,7 +87,6 @@ public class Company {
         }
     }
 
-
     public void showPriceForPeriod(LocalDate date1, LocalDate date2) {
         int cost = 0;
         for (Ticket ticket : tickets) {
@@ -96,6 +95,5 @@ public class Company {
             }
         }
         System.out.println("\nCost for choose period = " + cost);
-        ;
     }
 }
